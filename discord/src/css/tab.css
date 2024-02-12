@@ -1,0 +1,170 @@
+
+
+.conn{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    min-height: 400px;
+    height: 400px;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.2);
+    padding: 8px 25px 8px 25px;
+    box-sizing: content-box;
+}
+
+.wrap{
+    height: 100%;
+   overflow: hidden;
+}
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    padding-left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 0.2s ease-in;
+}
+.icon{
+    margin-right: 5px;
+   
+}
+.tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    width: 17%;
+
+}
+.com{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 92%;
+}
+
+.comi{
+    position: absolute;
+    z-index: 8;
+    height: 100%;
+    color: #000000;
+}
+input{
+    display: none;
+}
+
+h3{
+    color: rgba(0,0,0,0.8);
+}
+p{
+    padding-top: 8px;
+    color: rgba(0,0,0,0.6)
+}
+
+#one:checked ~.home{
+    padding: 10px;
+    background-color: blueviolet;
+    color: azure;
+    border-radius: 5px;
+  
+}
+
+
+
+#two:checked ~.blog{
+    padding: 10px;
+    background-color: blueviolet;
+    color: azure;
+    border-radius: 5px;
+}
+#three:checked ~.help{
+    padding: 10px;
+    background-color: blueviolet;
+    color: azure;
+    border-radius: 5px;
+}
+#fo:checked ~.code{
+    padding: 10px;
+    background-color: blueviolet;
+    color: azure;
+    border-radius: 5px;
+}
+#fi:checked ~.about{
+    padding: 10px;
+
+    background-color: blueviolet;
+    color: azure;
+    border-radius: 5px;
+}
+.content #one{
+    top:-50%;
+}
+
+
+.content{
+    padding-top: 25px;
+    margin-left: 15px;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+    padding-left: 2px;
+}
+
+.content #one{
+    top:-100%;
+  
+}
+.content #two{
+    top:-100%;
+}
+.content #three{
+    top:-100%;
+
+}
+.content #four{
+    top: -100%;
+}
+.content #five{
+    top:-100%;
+}
+.tab #one:checked + .content .comi #one{
+    top:5px;
+}
+label:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .conn{
+        min-width: 100%;
+        padding: 8px 8px;
+    }
+    .com{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .tab{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+    label{
+        flex-direction: column;
+        margin:0 8px;
+    }
+    h2{
+        padding-left: 9px;
+    }
+}

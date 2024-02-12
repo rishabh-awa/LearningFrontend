@@ -1,12 +1,19 @@
 
+
 import './App.css';
-import Card from './components/card';
+import {motion} from "framer-motion"
+
+
+
+
 
 function App() {
+
   return (
-  <div className="back">
-    <Card/>
-  </div>
+  <motion.div  style={{height:"100vh",background:"linear-gradient(90deg,#C31432,#240b3b)"}}
+  >
+
+  </motion.div>
   );
 }
 

@@ -5,7 +5,7 @@
     --colorblue:#0096FF;
 }
 
-img{
+.upper-half img{
     height: 130px;
     width: 130px;
     border-radius:110px;
@@ -22,7 +22,7 @@ img{
     left: 50%;
     transform: translate(-50%,-50%);
     margin: auto;
-    height: 500px;
+    height: 420px;
     width: 400px;
     background-color: antiquewhite;
     border-radius: 20px;
@@ -58,10 +58,10 @@ img{
     align-items: center;
 }
 .desc{
-    margin-top: 18px;
+    margin-top: 35px;
 }
 
-h2,h4{
+.lower-half h2,h4{
     color: #36454f;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;

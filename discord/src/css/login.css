@@ -1,0 +1,112 @@
+
+
+.Container{
+    margin: 0 ;
+    
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 320px;
+    max-width: 400px;
+    min-width: 275px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px ;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.heading{
+    background-color: rgb(44, 212, 156) ;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    padding: 15px 15px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 10px 30px;
+    box-sizing: content-box;
+}
+.icon{
+    box-sizing: content-box;
+    color: #fff;
+    background-color:rgb(44, 212, 156) ;
+    height: 28px;
+    padding: 5px;
+    width: 20%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    width: 100%;
+}
+input{
+    box-sizing: content-box;
+    height: 28px;
+    padding: 3px;
+    border: 2px solid rgb(228, 228, 228);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    font-size: 15px;
+    width: 100%;
+}
+input:focus{
+    outline: none;
+}
+h3{
+    font-size: 15px;
+    font-weight: normal;
+}
+.f{
+   
+    margin-bottom: 6px;
+}
+.green{
+    color: rgb(44, 212, 156);
+}
+.green:hover{
+    color:rgb(46, 194, 144) ;
+    cursor: pointer;
+    text-decoration: underline;
+}
+button{
+    background-color: rgb(44, 212, 156) ;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 800;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+    margin: 5px 0px;
+    margin-bottom: 10px;
+}
+button:hover{
+    background-color:rgb(46, 194, 144) ;
+    cursor: pointer;
+}
+.last{
+    display: flex;
+    justify-content: center;
+}
+.last .green{
+    margin-left: 4px;
+}

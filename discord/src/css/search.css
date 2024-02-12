@@ -1,0 +1,77 @@
+.wrap{
+    position: absolute;
+    top: 50%;
+    right:  50%;
+    transform: translate(-50%,-50%);
+}
+.con{
+    position: relative;
+    
+}
+label{
+    height: 100%;
+}
+.seachb{
+    border-radius: 0 50% 50% 0;
+    background-color: rgb(255, 88, 116);
+    height: 100%;
+    border: none;
+    padding: 0 15px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    position: absolute;
+}
+.cru{
+    height: 100%;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding-left: 8px ;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    font-size: 18px;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+
+
+.search input:focus{
+    outline:none;
+}
+
+.check{
+    display: none;
+}
+#check:checked + .cru{
+    padding: 0;
+    max-width: 0px;
+}
+    
+#check:checked ~label .seachb{
+    border-radius: 50%;
+    background-color: #FFF;
+    box-sizing: content-box ;
+    color: rgb(255, 88, 116);
+    font-size: 30px;
+    height: 28px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+    
+}

@@ -1,0 +1,82 @@
+.fold{
+    display: flex;
+}
+
+.gate{
+    height: 50px;
+    width: 50px;
+    opacity: 0.8;
+    margin-left: 5px;
+    position: fixed;
+}
+.hot{
+    position: absolute;
+    left: -170px;
+    transition: 2s;
+}
+.sidebar{
+    position: fixed;
+    top:1%;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px black;
+    height: 98vh;
+    min-width:170px ;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+   
+}
+.head{
+    height: 38px;
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.clos{
+    height: 25px;
+}
+.clos:hover{
+    color: rgb(212, 13, 13);
+}
+.id{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    transition: all 3s linear;
+    padding: 3px 10px;
+    box-sizing: content-box;
+    border-radius: 8px;
+}
+.body hr{
+    opacity: 0.4;
+    border: none;
+    height: 0.5px;
+    color: #fff;
+    background-color: #fff;
+
+}
+.id:hover{
+    opacity: 0.6;
+    border: 1px solid rgba(255,255,255,0.8);
+   
+}
+.gate:checked{
+    width: 170px;
+}
+input{
+ display: none;
+}
+#check:checked ~.hot{
+    left: 170px;
+}
+#check:checked ~.gate {
+    opacity: 0;
+}
